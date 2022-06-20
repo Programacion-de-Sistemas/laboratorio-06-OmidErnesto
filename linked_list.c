@@ -24,7 +24,12 @@ node *AddNode(node *list, int number)
     if(list == NULL){
 	list = newNode;
     }else{
-
+	node *aux;
+        aux=list;
+	while(aux->next !=NULL){
+	    aux = aux->next;
+	}
+	aux->next = newNode;
     }
     return list;
 
@@ -41,6 +46,7 @@ int main(){
         return 1;
     }
     list = AddNode(list,1);
+    list = AddNode(list,2);
 
     // imprimir los elementos de la lista
     for (node *tmp = list;tmp!=NULL;tmp=tmp->next)
