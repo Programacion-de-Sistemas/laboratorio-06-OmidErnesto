@@ -9,12 +9,14 @@ typedef struct node
 }
 node;
 
+//funcion para generar la lista
 node *ListNode(node *list)
 {
     list = NULL;
     return list;
 }
 
+//funcion para agregar un nodo (al final)
 node *AddNode(node *list, int number)
 {
     node *newNode;
@@ -45,6 +47,8 @@ int main(){
     if(n==NULL){
         return 1;
     }
+
+    //agregando 15 elemenos de tipo int a la lista
     list = AddNode(list,1);
     list = AddNode(list,2);
     list = AddNode(list,3);
