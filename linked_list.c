@@ -47,6 +47,19 @@ int main(){
     }
     list = AddNode(list,1);
     list = AddNode(list,2);
+    list = AddNode(list,3);
+    list = AddNode(list,4);
+    list = AddNode(list,5);
+    list = AddNode(list,6);
+    list = AddNode(list,7);
+    list = AddNode(list,8);
+    list = AddNode(list,9);
+    list = AddNode(list,10);
+    list = AddNode(list,20);
+    list = AddNode(list,30);
+    list = AddNode(list,50);
+    list = AddNode(list,80);
+    list = AddNode(list,100);
 
     // imprimir los elementos de la lista
     for (node *tmp = list;tmp!=NULL;tmp=tmp->next)
